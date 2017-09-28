@@ -1,6 +1,6 @@
 CC ?= gcc -fPIC
 CXX ?= g++ -fPIC
-NVCC ?= nvcc -Xcompiler -fPIC
+NVCC ?= nvcc -Xcompiler -fPIC -D_FORCE_INLINES
 AR ?= ar
 # -o is gnu only so this needs to be smarter; it does work because on darwin it
 #  fails which is also not windows.
